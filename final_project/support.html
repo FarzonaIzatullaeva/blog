@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Farzonakhon Izatullaeva">
+    <meta name="description" content="Support page Farzonakhon Izatullaeva">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/support.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Support</title>
+</head>
+<body>
+    
+    <header>
+        <nav  class="nav_box">
+            <ul class="nav_container">
+                <li class="nav"><a href="main.html">Home</a></li>
+                <li  class="nav"><a href="sport.html">Me & Sport</a></li>
+                <li  class="nav"><a href="coding.html">Me & Code</a></li>
+                <li  class="nav"><a href="vlogs.html">Me & Vlog</a></li>
+                <li  class="nav"><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        <h1>Welcome to <span>Support! <span></h1>
+
+        <ol id="info_list">
+            <li class="info">Our support usually answers within 10-20 minutes.</li>
+            <li  class="info">Responses will be sent to your email that you provided below.</li>
+            <li  class="info">While you are getting help, visit Farzonakhon's <a href="https://www.instagram.com/izatullaevafarzona/?utm_medium=copy_link"  target="_blank" class="social_media"> Instagram </a> & <a href="https://www.youtube.com/@farzonaizatullaeva3427/featured"  target="_blank" class="social_media"> YouTube. </a></li>
+        </ol>
+    </article>
+
+    <aside>
+        
+        <form id="support_form" action="http://example.com/farzonakhon/support" method="post">
+        
+            <fieldset id="content">
+
+                <div class="form_info">
+                    <label for="fullName" id="name_label">Name*</label>
+                    <br>
+                    <input name="Full Name" id="name" type="text" placeholder="First and Last name" required/>
+                </div>
+                <br>
+
+                <div class="form_info">
+                    <label for="e-mail" id="email_label">E-mail*</label>
+                    <br>
+                    <input name="userEmail" id="email" type="email" placeholder="example@gmail.com" required/>
+                </div>
+
+                <br>
+
+                <div class="form_info">
+                    <label for="response" id="response_label">Response</label>
+                    <br>
+                    <textarea id="response_box" name="Response"  type="textarea" placeholder="Tell us what happened..." ></textarea>
+                </div>
+
+                <br>
+
+                <p>Using which language do you want the support to contact to you?</p>
+                <input type="radio" id="eng" name="language" value="English">
+                <label for="eng">English</label><br>
+                <input type="radio" id="rus" name="language" value="Russian">
+                <label for="rus">Russian</label><br>
+                <input type="radio" id="uzb" name="language" value="JavaScript">
+                <label for="uzb">Uzbek</label>
+
+                <p>Please specify your problem:</p>
+
+                <input type="checkbox" id="prob1" value="interface">
+                <label for="interface"> Problems with interface</label><br>
+                <input type="checkbox" id="prob2"  value="acess">
+                <label for="acess"> Problems with accessibility</label><br>
+                <input type="checkbox" id="prob3" value="info">
+                <label for="info"> Wrong information is being used</label>
+                
+                <br>
+                <br>
+
+                <button id="submit" type="submit" class="button">Submit</button>
+                <button id="reset" type="reset" class="button">Reset</button>
+
+                <br> 
+                
+            </fieldset>
+        </form>
+    </aside>   
+    
+    <br>
+    <footer>
+        <p id="footer" >Farzonakhon Izatullaeva's blog &copy; 2022 All Rights Reserved</p>
+        <br>
+
+        <div class="social_media_box">
+            <a href="https://www.youtube.com/@farzonaizatullaeva3427/featured"  target="_blank"> 
+                <img src="images/youtube.PNG" alt="youtube" id="youtube_icon">
+            </a>
+
+            <a href="https://www.instagram.com/izatullaevafarzona/?utm_medium=copy_link"  target="_blank"> <img src="images/instagram.PNG" alt="instagram" id="instagram_icon"></a>
+        </div>
+    </footer>
+</body>
+</html>

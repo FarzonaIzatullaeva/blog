@@ -1,0 +1,181 @@
+body{
+    height: 100vh;
+}
+
+/*styles for article element*/
+article{
+    display: grid;
+    grid-template-rows: 15fr 15fr ;
+    grid-template-columns: 5fr 5fr;
+    justify-items: center; /*horizontal alignmet of items*/
+    align-items: center; /*verticla alignmet of items*/
+}
+
+/*defines where the name box should be located within grid*/
+.name_box{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+/*styles for first name*/
+#first_name{
+    color: pink;
+    font-family: 'Brush Script MT', cursive;
+    margin: 0;
+    font-size: 5vw;
+    text-shadow: 2px 2px black;
+}
+
+/*styles for last name*/
+#last_name{
+    color:rgb(136, 225, 255);
+    font-family: 'Brush Script MT', cursive;
+    margin: 0;
+    font-size: 5vw;
+    text-shadow: 2px 2px black;
+}
+
+/*styles for subtext "from planet earth" */
+#subtext{
+    font-family: monospace;
+    margin: 0;
+    margin-top: 15px;
+    font-size: 1.3vw;
+}
+
+/*defines where the box with my picture should be located withon grid*/
+.picture_box{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/*styles for my picture*/
+#logo{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 30vw;
+}
+
+/*defines where the main text box should be located*/
+
+.main_text_box{
+    grid-column: 1 / -1;
+    grid-row: 2;
+}
+
+/*styles for the text "about" */
+#about{
+    margin-left: 30px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background:  linear-gradient(to right, pink, rgb(136, 225, 255));
+    width: 5em;
+    text-align: center;
+    font-size: 2vw;
+
+}
+
+/*styles for paragraphs*/
+p{
+
+    justify-items: center; /*horizontal alignmet of items*/
+    margin-left: 30px;
+    font-size: 1.5vw;
+}
+
+/*styles for how should article and its containings look on a viewport 708px and less*/
+@media only screen and (max-width: 708px) {
+    article{
+        display: grid;
+        grid-template-rows: 10fr 15fr 15fr ;
+        grid-template-columns: 5fr;
+        justify-items: center; /*horizontal alignmet of items*/
+        align-items: center; /*verticla alignmet of items*/
+    }
+
+
+    .name_box{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    #first_name{
+        color: pink;
+        font-family: 'Brush Script MT', cursive;
+        margin: 0;
+        font-size: 5vw;
+        text-shadow: 2px 2px black;
+    }
+    
+    #last_name{
+        color:rgb(136, 225, 255);
+        font-family: 'Brush Script MT', cursive;
+        margin: 0;
+        font-size: 5vw;
+        text-shadow: 2px 2px black;
+    }
+    
+    #subtext{
+        font-family: monospace;
+        margin: 0;
+        margin-top: 15px;
+        font-size: 1.3vw;
+    }
+    .picture_box{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    #logo{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 30vw;
+    }
+    
+    .main_text_box{
+        grid-column: 1 / -1;
+        grid-row: 3;
+    }
+    
+    #about{
+        margin-left: 30px;
+        border: 1px solid black;
+        border-radius: 50px;
+        background:  linear-gradient(to right, pink, rgb(136, 225, 255));
+        width: 5em;
+        text-align: center;
+        font-size: 2vw;
+    
+    }
+    p{
+    
+        justify-items: center; /*horizontal alignmet of items*/
+        margin-left: 30px;
+        font-size: 1.5vw;
+    }
+    
+}
+
+/*media for print*/
+@media print{
+    body{
+        font-size: 12pt;
+        
+    }
+}
+
+/*styles aside, and sets the dispaly to grid*/
+aside{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 15fr;
+    grid-template-columns: 30fr;
+}
+
+/*styles for video*/
+#intro_video{
+    width: 100%;
+}
+

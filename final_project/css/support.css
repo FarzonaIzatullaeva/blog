@@ -1,0 +1,119 @@
+body{
+    height: 100vh;
+}
+
+
+h1{
+    margin-left: 10px;
+    font-size: 3vw;
+}
+
+li.info{
+    font-size: 1.5vw;
+}
+
+
+aside{
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+}
+
+.social_media{
+    color: rgb(140, 17, 17);
+}
+
+a.social_media:hover{
+    color: rgb(17, 122, 140);
+}
+
+span{
+    color: rgb(140, 17, 17);
+}
+
+#content{
+    width: 50vw;
+    height: 100vh;
+    border: 3px solid rgb(0, 0, 0);
+    background:  linear-gradient(to right, rgb(136, 225, 255), rgb(218, 150, 245));
+    border-radius: 20px;
+}
+
+#name{
+    width: 20vw;
+}
+
+#email{
+    width: 20vw;
+}
+
+#response_box{
+    width: 40vw;
+    height: 30vh;
+}
+
+label{
+    float: left;
+
+}
+
+.button{
+    background-color: rgb(218, 150, 245);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50px;
+}
+
+input{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+textarea{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+
+@media only screen and (max-width: 708px) {
+
+h1{
+    margin-left: 10px;
+    font-size: 4vw;
+}
+
+li.info{
+    font-size: 3vw;
+}
+#content{
+    width: 80vw;
+    height: 100vh;
+    border: 3px solid rgb(0, 0, 0);
+    background:  linear-gradient(to right, rgb(136, 225, 255), rgb(218, 150, 245));
+    border-radius: 20px;
+}
+
+#name{
+    width: 50vw;
+}
+
+#email{
+    width: 50vw;
+}
+
+#response_box{
+    width: 70vw;
+    height: 30vh;
+}
+
+}
+
+@media print{
+    body{
+        font-size: 12pt;
+        
+    }
+}

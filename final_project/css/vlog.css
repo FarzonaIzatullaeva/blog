@@ -1,0 +1,94 @@
+body{
+    height: 100vh;
+}
+
+/*styles for article, its grid*/
+article{
+    display: grid;
+    grid-template-rows: 5fr 5fr ;
+    grid-template-columns: 5fr 5fr;
+    justify-items: center; /*horizontal alignmet of items*/
+    align-items: center; /*verticla alignmet of items*/
+}
+
+#main_pic{
+    width: 35vw;
+}
+
+/*main header styles*/
+h1{
+    margin: 0;
+    font-family: 'Brush Script MT', cursive;
+    color: pink;
+    background-color: rgba(0, 0, 0, 0.699);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    width: 40vw;
+    text-align: center;
+    font-size: 5vw;
+}
+
+p{
+    margin-left: 15px;
+    font-size: 1.5vw;
+}
+
+.text_box{
+    grid-column: 1/-1;
+}
+
+/*styles for the section, its grid*/
+section{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr ;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 30px;
+    background-color: beige;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*video and figcaption styles*/
+video{
+    width: 30vw;
+}
+
+figcaption{
+    font-size: 1.5vw;
+}
+
+/*styles when screen size is 708px or less*/
+@media only screen and (max-width: 708px) {
+    article{
+        display: grid;
+        grid-template-rows:  5fr 5fr 5fr;
+        grid-template-columns: 1fr ;
+        align-items: center;
+        justify-items: center;
+    }
+
+    #main_pic{
+        grid-row: 2;
+        
+    }
+
+    section{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20fr 20fr 20fr 20fr;
+        grid-gap: 2;
+    }
+    video{
+        width: 50vw;
+    }
+}
+
+/*media for print*/
+@media print{
+    body{
+        font-size: 12pt;
+        
+    }
+}

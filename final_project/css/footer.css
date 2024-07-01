@@ -1,0 +1,44 @@
+
+/*styles for footer*/
+footer{
+    background:  linear-gradient(to right, pink, rgb(136, 225, 255));
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr;
+    margin: 0;
+    justify-items: center;
+    justify-content: center;
+}
+
+/*styles text in the footer*/
+#footer{
+    margin: 0;
+    margin-left: 30px;
+    font-size: 1.5vw;
+}
+
+/*styles for box containing all of the social media info*/
+.social_media_box{
+    margin: 0;
+    margin-left: 20px;
+}
+
+/*styles for YouTube icon*/
+#youtube_icon{
+    width: 2vw;
+    margin-left: 10px;
+}
+
+/*styles for Instagram icon*/
+
+#instagram_icon{
+    width: 2vw;
+    margin-left: 10px;
+}
+
+@media print{
+    body{
+        font-size: 12pt;
+        
+    }
+}
